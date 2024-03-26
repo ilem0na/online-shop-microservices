@@ -13,7 +13,7 @@ spec:
         app: {{ .Values.appName }}
     spec:
       containers:
-      - name: {{ .Values.appName }}
+        name: {{ .Values.appName }}
         image: "{{ .Values.appImage }}:{{ .Values.appVersion }}"
         ports:
         - containerPort: {{ .Values.containerPort }}
